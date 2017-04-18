@@ -174,7 +174,7 @@ client.remove('posts', {'title': 'Google'}, callback=remove_callback)
 
 ### Class Init
 
-####DDPClient(url, auto_reconnect=True, auto_reconnect_timeout=0.5, debug=False)
+#### DDPClient(url, auto_reconnect=True, auto_reconnect_timeout=0.5, debug=False)
 
 **Arguments**
 
@@ -188,11 +188,11 @@ _debug_ - print out lots of debug info (default: False)
 
 ### Functions
 
-####connect()
+#### connect()
 
 Connect to the meteor server
 
-####login(user, password, token=token, callback=None)
+#### login(user, password, token=token, callback=None)
 
 Login with a username and password. If a token is provided it will be tried first, falling back to username and password if
 the token is invalid.
@@ -207,7 +207,7 @@ _password_ - the password for the account
 _token_ - meteor resume token
 _callback_ - callback function containing error as first argument and login data  
 
-####logout(callback=None)
+#### logout(callback=None)
 
 Logout a user
 
@@ -241,7 +241,7 @@ _params_ - the subscription parameters
 
 _callback_ - a function callback that returns an error (if exists)  
 
-####unsubscribe(name)
+#### unsubscribe(name)
 
 Unsubscribe from a collection
 
@@ -249,7 +249,7 @@ Unsubscribe from a collection
 
 _name_ - the name of the publication  
 
-####find(collection, selector={})
+#### find(collection, selector={})
 
 Find data in a collection
 
@@ -261,7 +261,7 @@ _collection_ - collection to search
 
 _selector_ - the query (default returns all items in a collection)  
 
-####find_one(collection, selector={})
+#### find_one(collection, selector={})
 
 Return one item from a collection
 
@@ -273,7 +273,7 @@ _collection_ - collection to search
 
 _selector_ - the query (default returns first item found)  
 
-####insert(collection, doc, callback=None)
+#### insert(collection, doc, callback=None)
 
 Insert an item into a collection
 
@@ -288,7 +288,7 @@ in which case Meteor will generate one for you.
 _callback_ - Optional. If present, called with an error object as the first argument and,  
 if no error, the _id as the second.  
 
-####update(collection, selector, modifier, callback=None)
+#### update(collection, selector, modifier, callback=None)
 
 Insert an item into a collection
 
@@ -303,7 +303,7 @@ _modifier_ - Specifies how to modify the documents
 _callback_ - Optional. If present, called with an error object as the first argument and,  
 if no error, the number of affected documents as the second.  
 
-####remove(collection, selector, callback=None)
+#### remove(collection, selector, callback=None)
 
 Remove an item from a collection
 
@@ -508,7 +508,7 @@ client.on('logged_out', logged_out)
 
 `logged_out` callback takes no arguments
 
-####All of the callbacks
+#### All of the callbacks
 
 For reference
 
@@ -527,7 +527,7 @@ client.on('logged_in', logged_in)
 client.on('logged_out', logged_out)
 ```
 
-##Example
+## Example
 
 There is an included `example.py` script to use with the `todo` sample app included with meteor
 
@@ -544,7 +544,7 @@ Then run example.py
 $ python example.py
 ```
 
-##Collaborators
+## Collaborators
 
 - [@ppettit](https://github.com/ppettit)
 - [@pmgration](https://github.com/pmgration)
